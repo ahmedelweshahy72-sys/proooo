@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed El-Weshahy | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particles background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AE</a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-indicator"></div>
+  </nav>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="container">
+      <div class="home-inner">
+        <div class="profile-image-wrapper fade-in">
+          <img src="image/profile.jpg" alt="Ahmed El-Weshahy" class="profile-image" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+          <div class="profile-placeholder hidden" aria-hidden="true">AE</div>
+        </div>
+        <div class="home-content fade-in">
+          <h1 class="home-title">Ahmed El-Weshahy</h1>
+          <p class="home-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="typing-text"><span id="typed"></span><span class="cursor">|</span></p>
+          <div class="home-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="about-content fade-in">
+        <p class="about-text">Motivated AI senior student with strong hands-on experience in Deep Learning, NLP, and CV. Aiming to enhance skills and contribute effectively through practical training environments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Education</h2>
+      <div class="education-card fade-in">
+        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Faculty of Computers and Information – Zagazig University</h3>
+        <p class="education-major">Major: Artificial Intelligence</p>
+        <p class="education-date">Expected Graduation: 2026</p>
+        <p class="education-gpa">GPA: 3.2/4.0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Work Experience</h2>
+      <div class="experience-card fade-in">
+        <div class="experience-header">
+          <i class="fas fa-briefcase"></i>
+          <div>
+            <h3>Software Development Intern</h3>
+            <p class="company">Golden Wolf Software</p>
+          </div>
+        </div>
+        <ul class="experience-list">
+          <li>Contributed to AI module development</li>
+          <li>Assisted in code reviews and agile sprints</li>
+          <li>Debugging and practical coding experience</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-code"></i> Programming</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div></div>
+            <div class="skill-item"><span>SQL</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></div>
+            <div class="skill-item"><span>Java</span><div class="skill-bar"><div class="skill-fill" data-level="75"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-brain"></i> AI/ML</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span>Deep Learning</span><div class="skill-bar"><div class="skill-fill" data-level="88"></div></div></div>
+            <div class="skill-item"><span>NLP</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></div>
+            <div class="skill-item"><span>Computer Vision</span><div class="skill-bar"><div class="skill-fill" data-level="82"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span>TensorFlow</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></div>
+            <div class="skill-item"><span>Keras</span><div class="skill-bar"><div class="skill-fill" data-level="88"></div></div></div>
+            <div class="skill-item"><span>PyTorch</span><div class="skill-bar"><div class="skill-fill" data-level="80"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Jupyter</span>
+          </div>
+        </div>
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card project-main fade-in">
+          <div class="project-glow"></div>
+          <h3>AI Dermatological Disease Diagnosis System</h3>
+          <p>CNN-based model (90%+ accuracy), NLP module for clinical note analysis, and medical-focused UI.</p>
+          <div class="project-tags">
+            <span>CNN</span><span>NLP</span><span>Medical AI</span>
+          </div>
+        </article>
+        <article class="project-card fade-in">
+          <div class="project-glow"></div>
+          <h3>Predictive ML Models</h3>
+          <p>Machine learning models for prediction and classification tasks.</p>
+          <div class="project-tags"><span>ML</span></div>
+        </article>
+        <article class="project-card fade-in">
+          <div class="project-glow"></div>
+          <h3>NLP Text Classification</h3>
+          <p>Natural language processing for text classification and analysis.</p>
+          <div class="project-tags"><span>NLP</span></div>
+        </article>
+        <article class="project-card fade-in">
+          <div class="project-glow"></div>
+          <h3>Object Detection using Computer Vision</h3>
+          <p>CV-based object detection and recognition systems.</p>
+          <div class="project-tags"><span>CV</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Testimonials</h2>
+      <div class="testimonials-slider">
+        <button class="slider-btn slider-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonials-track">
+          <div class="testimonial-card active">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Outstanding work on the AI module. Very professional and dedicated."</p>
+            <p class="testimonial-name">John Doe</p>
+            <p class="testimonial-role">Tech Lead, Golden Wolf</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Great problem-solving skills and quick learner."</p>
+            <p class="testimonial-name">Jane Smith</p>
+            <p class="testimonial-role">Mentor</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Brought fresh ideas and delivered on time. Highly recommend."</p>
+            <p class="testimonial-name">Alex Johnson</p>
+            <p class="testimonial-role">Project Manager</p>
+          </div>
+        </div>
+        <button class="slider-btn slider-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="slider-dots"></div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Certifications</h2>
+      <div class="certifications-grid fade-in">
+        <div class="cert-card"><i class="fas fa-award"></i><span>Golden Wolf Internship (2024)</span></div>
+        <div class="cert-card"><i class="fas fa-award"></i><span>Deep Learning</span></div>
+        <div class="cert-card"><i class="fas fa-award"></i><span>NLP</span></div>
+        <div class="cert-card"><i class="fas fa-award"></i><span>Computer Vision</span></div>
+        <div class="cert-card"><i class="fas fa-award"></i><span>Data Mining</span></div>
+        <div class="cert-card"><i class="fas fa-award"></i><span>Algorithms</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Contact</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info fade-in">
+          <a href="tel:+201066994699" class="contact-item" title="Call">
+            <i class="fas fa-phone"></i>
+            <span>+20 106 699 4699</span>
+          </a>
+          <a href="mailto:ahmedelweshahy72@gmail.com" class="contact-item" title="Email">
+            <i class="fas fa-envelope"></i>
+            <span>ahmedelweshahy72@gmail.com</span>
+          </a>
+          <a href="https://www.google.com/maps/search/Fakous,+Sharkia,+Egypt" target="_blank" rel="noopener" class="contact-item" title="Address">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Fakous, Sharkia, Egypt</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmed-el-weshahy-1615932a8" target="_blank" rel="noopener" class="contact-item" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/ahmedelweshahy72-sys" target="_blank" rel="noopener" class="contact-item" title="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <form class="contact-form fade-in" id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-name">Ahmed Hussein Ali Hussein</p>
+    <p class="footer-copy">© 2026 All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
